@@ -38,3 +38,8 @@ test("First character is a symbol", () => {
   let testString = "?!?!the wheels on the bus go round and round.";
   expect(capitalize(testString)).toBe("?!?!The wheels on the bus go round and round.")
 })
+
+test("Very strange over-engineering test", () => {
+  let testString = "     ?!?!    the wheels on the bus go round and round."
+  expect(capitalize(testString)).toBe("?!?!    The wheels on the bus go round and round.")
+})

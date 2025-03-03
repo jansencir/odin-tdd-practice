@@ -13,7 +13,6 @@ export default function capitalize(string) {
   for (let i = 0; i < stringArray.length; i++) {
     if (stringArray[i].match(/[a-zA-Z]/)) {
       stringArray[i] = stringArray[i].toUpperCase();
-      console.log(stringArray.join(""));
       return stringArray.join("");
     }
   }
