@@ -33,3 +33,8 @@ test("First character is a number", () => {
   let testString = "222the wheels on the bus go round and round.";
   expect(capitalize(testString)).toBe("222The wheels on the bus go round and round.")
 })
+
+test("First character is a symbol", () => {
+  let testString = "?!?!the wheels on the bus go round and round.";
+  expect(capitalize(testString)).toBe("?!?!The wheels on the bus go round and round.")
+})
