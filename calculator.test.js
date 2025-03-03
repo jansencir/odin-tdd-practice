@@ -32,3 +32,11 @@ test("Multiplies two numbers together", () => {
   expect(calculator(-5, -5, "multiply")).toBe(25);
   expect(calculator(0, 3, "multiply")).toBe(0);
 })
+
+// Test 4 Division
+test("Divides two numbers together", () => {
+  expect(calculator(56, 8, "divide")).toBe(7);
+  expect(calculator(81, -9, "divide")).toBe(-9);
+  expect(calculator(-12, -3, "divide")).toBe(4);
+  expect(calculator(0, 1, "divide")).toBe(0);
+})
