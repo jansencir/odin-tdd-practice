@@ -23,3 +23,8 @@ test("Checks if it's a string", () => {
   let testObject = {name: "name"};
   expect(capitalize(testObject)).toBe("Not a string.");
 })
+
+test("First letter is already capital", () => {
+  let testString = "The wheels on the bus go round and round.";
+  expect(capitalize(testString)).toBe("The wheels on the bus go round and round.")
+})
