@@ -12,4 +12,10 @@ import caesarCipher from "./caesarCipher.js";
 test("Lower-case letter-only strings", () => {
   expect(caesarCipher("dog", 2)).toBe("fqi");
   expect(caesarCipher("cat", 4)).toBe("gex");
-});
+})
+
+// Test 2 - Ciphers text that wraps (goes from z to a);
+test("Ciphers text that wraps", () => {
+  expect(caesarCipher("xyz", 3)).toBe("abc");
+  expect(caesarCipher("tuvwxyz", 7)).toBe("abcdefg");
+})
