@@ -9,3 +9,9 @@ test("Returns a basic string", () => {
   let testString = "Mango mango";
   expect(reverseString(testString)).toBe("ognam ognaM");
 })
+
+// Test 2 - Reverse a complicated string
+test("Returns a basic string", () => {
+  let testString = "    $Mango?! How about a Mango?!!!  ";
+  expect(reverseString(testString)).toBe("  !!!?ognaM a tuoba woH !?ognaM$    ");
+})
