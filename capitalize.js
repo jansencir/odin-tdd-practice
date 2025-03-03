@@ -1,5 +1,5 @@
 export default function capitalize(string) {
-  let stringArray = string.split("");
+  let stringArray = string.trim().split("");
   stringArray[0] = stringArray[0].toUpperCase();
   return stringArray.join("");
 }
