@@ -9,7 +9,7 @@
 
 import calculator from "./calculator.js";
 
-// Test 1
+// Test 1 Addition
 test("Adds two numbers together", () => {
   expect(calculator(2, 2, "add")).toBe(4);
   expect(calculator(-5, -2, "add")).toBe(-7);
@@ -17,3 +17,10 @@ test("Adds two numbers together", () => {
   expect(calculator(0, 0, "add")).toBe(0);
 })
 
+// Test 2 Subtraction
+test("Subtracts two numbers together", () => {
+  expect(calculator(10, 5, "subtract")).toBe(5);
+  expect(calculator(100, -35, "subtract")).toBe(135);
+  expect(calculator(-20, -25, "subtract")).toBe(5);
+  expect(calculator(0, 0, "subtract")).toBe(0);
+})
