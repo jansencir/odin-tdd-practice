@@ -4,6 +4,7 @@
  * Multiplies two numbers
  * Divides two numbers
  * Works on decimals
+ * Converts string of a number to type number
  * Checks for type (x and y should be numbers, op should be a string)
  */
 
@@ -48,3 +49,17 @@ test("Works on decimals", () => {
   expect(calculator(2.5, 3, "multiply")).toBe(7.5);
   expect(calculator(7, 2, "divide")).toBe(3.5);
 })
+
+// Test 6 Convert string number to real number
+test("Works on string of numbers", () => {
+  expect(calculator("3", "3", "add")).toBe(6);
+  expect(calculator("-7", "-3", "subtract")).toBe(-4);
+  expect(calculator("9", "9", "multiply")).toBe(81);
+  expect(calculator("10", "4", "divide")).toBe(2.5);
+})
+
+// Test 7 Argument Type
+// test("Checks the type of the arguments to make sure they're valid", () => {
+//   expect(calculator()).toBe("Missing numbers");
+//   expect(calculator(3, 3)).toBe("Missing or invalid operator");
+// })
