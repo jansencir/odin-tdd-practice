@@ -24,3 +24,11 @@ test("Subtracts two numbers together", () => {
   expect(calculator(-20, -25, "subtract")).toBe(5);
   expect(calculator(0, 0, "subtract")).toBe(0);
 })
+
+// Test 3 Multiplication
+test("Multiplies two numbers together", () => {
+  expect(calculator(3, 3, "multiply")).toBe(9);
+  expect(calculator(4, -8, "multiply")).toBe(-32);
+  expect(calculator(-5, -5, "multiply")).toBe(25);
+  expect(calculator(0, 3, "multiply")).toBe(0);
+})
