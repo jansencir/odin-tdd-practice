@@ -1,11 +1,11 @@
 export default function calculator(x, y, op) {
   if (op === "add") {
-    return x + y;
+    return parseFloat(x) + parseFloat(y);
   } else if (op === "subtract") {
-    return x - y;
+    return parseFloat(x) - parseFloat(y);
   } else if (op === "multiply") {
-    return x * y;
+    return parseFloat(x) * parseFloat(y);
   } else if (op === "divide") {
-    return x / y;
+    return parseFloat(x) / parseFloat(y);
   }
 }
