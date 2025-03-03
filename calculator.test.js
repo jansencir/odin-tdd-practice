@@ -5,7 +5,7 @@
  * Divides two numbers
  * Works on decimals
  * Converts string of a number to type number
- * Checks for type (x and y should be numbers, op should be a string)
+ * Checks for missing arguments
  */
 
 import calculator from "./calculator.js";
@@ -58,8 +58,8 @@ test("Works on string of numbers", () => {
   expect(calculator("10", "4", "divide")).toBe(2.5);
 })
 
-// Test 7 Argument Type
-// test("Checks the type of the arguments to make sure they're valid", () => {
-//   expect(calculator()).toBe("Missing numbers");
-//   expect(calculator(3, 3)).toBe("Missing or invalid operator");
-// })
+// Test 7 Missing arguments
+test("Checks for missing arguments", () => {
+  expect(calculator()).toBe("Missing argument(s)");
+  expect(calculator(3, 3)).toBe("Missing argument(s)");
+})
