@@ -40,3 +40,11 @@ test("Divides two numbers together", () => {
   expect(calculator(-12, -3, "divide")).toBe(4);
   expect(calculator(0, 1, "divide")).toBe(0);
 })
+
+// Test 5 Decimals
+test("Works on decimals", () => {
+  expect(calculator(5.5, 3.75, "add")).toBe(9.25);
+  expect(calculator(8, 2.2, "subtract")).toBe(5.8);
+  expect(calculator(2.5, 3, "multiply")).toBe(7.5);
+  expect(calculator(7, 2, "divide")).toBe(3.5);
+})
