@@ -35,11 +35,11 @@ function shiftArray(alphabet, shift) {
   let plainArray = Array.from(alphabet);
   let cipherArray = [];
 
-  for (let i = 0; i < plainArray.length - 1; i++) {
+  for (let i = 0; i < plainArray.length; i++) {
     // You are adding characters to cipherArray, but it will be the shifted version
     // Get the letter at plainArray, but add the shift to i
     // Whatever that letter is, .push(letter) to cipherArray
-    let current = plainArray[(i + shift) % (plainArray.length - 1)];
+    let current = plainArray[(i + shift) % (plainArray.length)];
     cipherArray.push(current);
   }
   return cipherArray
