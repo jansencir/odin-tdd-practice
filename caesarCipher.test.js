@@ -5,3 +5,11 @@
  * Ciphers a lower-case number & symbol containing string
  * Ciphers a lower and upper-case number & symbol containing string
  */
+
+import caesarCipher from "./caesarCipher.js";
+
+// Test 1 - Ciphers a lower-case letter-only string
+test("Lower-case letter-only strings", () => {
+  expect(caesarCipher("dog", 2)).toBe("fqi");
+  expect(caesarCipher("cat", 4)).toBe("gex");
+});
