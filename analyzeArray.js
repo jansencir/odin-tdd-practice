@@ -11,13 +11,7 @@ export default function analyzeArray(array) {
     return object;
   }
 
-  // Order the array from smallest to largest
-  // Set min to the first number
-  // Set max to the highest number
-  // Set length to length
-  // Sum up the array, and set it 
   let sortedArray = array.sort((a, b) => a - b);
-  // console.log(sortedArray);
 
   object.average = getAverage(array);
   object.min = sortedArray[0];
