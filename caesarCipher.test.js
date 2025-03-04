@@ -31,3 +31,8 @@ test("Lower-case number & symbol containing string", () => {
   expect(caesarCipher("dog1!", 2)).toBe("fqi1!");
   expect(caesarCipher("cat??222", 4)).toBe("gex??222");
 })
+
+// Test 5 - Ciphers a lower and upper-case number & symbol containing string
+test("Lower and upper-case number & symbol containing string", () => {
+  expect(caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
+})
