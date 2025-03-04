@@ -22,3 +22,11 @@ test("Works on an empty array", () => {
     { average: 0, min: 0, max: 0, length: 0 }
   )
 })
+
+// Test 3 - Works on an array of negative and positive numbers
+test("Works on a simple array", () => {
+  let testArray = [5, -10, -4, 3, 18, 21];
+  expect(analyzeArray(testArray)).toEqual(
+    { average: 5.5, min: -10, max: 21, length: 6 }
+  )
+})
