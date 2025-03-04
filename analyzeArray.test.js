@@ -24,9 +24,17 @@ test("Works on an empty array", () => {
 })
 
 // Test 3 - Works on an array of negative and positive numbers
-test("Works on a simple array", () => {
+test("Works on an array of negative and positive numbers", () => {
   let testArray = [5, -10, -4, 3, 18, 21];
   expect(analyzeArray(testArray)).toEqual(
     { average: 5.5, min: -10, max: 21, length: 6 }
+  )
+})
+
+// Test 4 - Works on an array of just negative numbers
+test("Works on an array of just negative numbers", () => {
+  let testArray = [-2, -19, -3, -5, -8];
+  expect(analyzeArray(testArray)).toEqual(
+    { average: -7.4, min: -19, max: -2, length: 5 }
   )
 })
