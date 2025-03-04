@@ -7,6 +7,10 @@ export default function analyzeArray(array) {
     length: 0,
   };
 
+  if (array.length === 0) {
+    return object;
+  }
+
   // Order the array from smallest to largest
   // Set min to the first number
   // Set max to the highest number
