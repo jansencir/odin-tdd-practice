@@ -14,3 +14,11 @@ test("Works on a simple array", () => {
     { average: 3, min: 1, max: 5, length: 5 }
   )
 })
+
+// Test 2 - Returns 0 for everything if passed an empty array
+test("Works on an empty array", () => {
+  let testArray = [];
+  expect(analyzeArray(testArray)).toEqual(
+    { average: 0, min: 0, max: 0, length: 0 }
+  )
+})
