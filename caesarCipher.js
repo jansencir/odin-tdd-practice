@@ -66,6 +66,8 @@ function arrayCipherController(stringArray, alphabetArrayLower, alphabetArrayUpp
     } else if (stringArray[i].match(/[A-Z]/)) {
       // Perform uppercase operation
       array.push(pushCharacter(stringArray[i], alphabetArrayUpper, shiftedArrayUpper))
+    } else {
+      array.push(stringArray[i])
     }
   }
   return array;
