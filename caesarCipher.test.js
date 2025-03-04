@@ -19,3 +19,9 @@ test("Ciphers text that wraps", () => {
   expect(caesarCipher("xyz", 3)).toBe("abc");
   expect(caesarCipher("tuvwxyz", 7)).toBe("abcdefg");
 })
+
+// Test 3 - Ciphers lower-case and upper-case letter-only string
+test("Lower and upper-case strings", () => {
+  expect(caesarCipher("DoG", 2)).toBe("FqI");
+  expect(caesarCipher("cAt", 4)).toBe("gEx");
+})
