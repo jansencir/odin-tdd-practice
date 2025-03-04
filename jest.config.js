@@ -4,5 +4,6 @@ module.exports = {
     "./reverseString.test.js",
     "./calculator.test.js",
     "./caesarCipher.test.js",
+    "./analyzeArray.test.js",
   ],
 };
